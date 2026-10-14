@@ -1,0 +1,18 @@
+{
+  "_preset": "Violeta — lila con resalte rosa. Creativo, suave.",
+  "colores": {
+    "accent": "#A78BFA",
+    "highlight": "#F0ABFC",
+    "ink": "#0F0B16",
+    "text": "#FFFFFF",
+    "soft": "#E2DCF0",
+    "line": "#857C99",
+    "ok": "#4ADE80",
+    "alert": "#FB7185"
+  },
+  "fuente": {
+    "principal": "Poppins",
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  }
+}

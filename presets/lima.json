@@ -1,0 +1,18 @@
+{
+  "_preset": "Lima — verde ácido. Atrevido, joven.",
+  "colores": {
+    "accent": "#C6F432",
+    "highlight": "#C6F432",
+    "ink": "#0E0F0C",
+    "text": "#FFFFFF",
+    "soft": "#DDE3D0",
+    "line": "#7F8773",
+    "ok": "#4ADE80",
+    "alert": "#FB7185"
+  },
+  "fuente": {
+    "principal": "Plus Jakarta Sans",
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  }
+}

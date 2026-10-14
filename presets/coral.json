@@ -1,0 +1,18 @@
+{
+  "_preset": "Coral — naranja cálido con resalte amarillo. Cercano, enérgico.",
+  "colores": {
+    "accent": "#FF5A36",
+    "highlight": "#FFD23F",
+    "ink": "#120C0A",
+    "text": "#FFFFFF",
+    "soft": "#E8DDD8",
+    "line": "#8F7F78",
+    "ok": "#4ADE80",
+    "alert": "#FF3B5C"
+  },
+  "fuente": {
+    "principal": "Montserrat",
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  }
+}

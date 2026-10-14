@@ -1,0 +1,18 @@
+{
+  "_preset": "Eléctrico — cian sobre negro azulado. Técnico, limpio.",
+  "colores": {
+    "accent": "#3DD6F5",
+    "highlight": "#3DD6F5",
+    "ink": "#0B0F14",
+    "text": "#FFFFFF",
+    "soft": "#D6DCE5",
+    "line": "#7C8794",
+    "ok": "#4ADE80",
+    "alert": "#FB7185"
+  },
+  "fuente": {
+    "principal": "Inter",
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  }
+}

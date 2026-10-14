@@ -1,0 +1,19 @@
+node_modules/
+out/
+final/
+qa/
+.venv/
+models/
+__pycache__/
+*.pyc
+.DS_Store
+# nunca se suben datos personales ni material de prueba
+marca/
+proyectos/
+template/public/*.mp4
+template/public/*.mp3
+template/public/sfx/
+template/src/data/*.ts
+template/work/
+template/perfil.json
+template/cortes.json

@@ -1,0 +1,10 @@
+{
+  "src": "../grabacion/demo.mp4",
+  "out": "public/c1.mp4",
+  "alto": 1000, "alto_mov": 838,
+  "patron": "acme|acrne|aeme|juan|perez|pport@",
+  "rapidos": [[0, 3.6]],
+  "antes": [{"si": "platfo", "salvo": "acme", "chars": 10}],
+  "bajo": [],
+  "manual": []
+}

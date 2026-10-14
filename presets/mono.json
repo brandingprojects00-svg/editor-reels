@@ -1,0 +1,18 @@
+{
+  "_preset": "Mono — blanco y negro con resalte amarillo. Sobrio, editorial.",
+  "colores": {
+    "accent": "#FFE14D",
+    "highlight": "#FFE14D",
+    "ink": "#0A0A0A",
+    "text": "#FFFFFF",
+    "soft": "#D4D4D4",
+    "line": "#7A7A7A",
+    "ok": "#4ADE80",
+    "alert": "#F87171"
+  },
+  "fuente": {
+    "principal": "Inter",
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "_como": "Ejemplo comentado. El tuyo vive en ~/editor-reels/marca/perfil.json y lo escribe la entrevista. Las claves que empiezan por _ son notas.",
+  "nombre": "Ana",
+  "handle": "@ana.hornea",
+  "idioma": "es",
+  "plataformas": [
+    "reels",
+    "tiktok"
+  ],
+  "ritmo": "dinamico",
+  "_ritmo": "tranquilo | dinamico | frenetico — decide el silencio máximo del montaje (0.8 / 0.45 / 0.25 s) y la densidad de eventos",
+  "transcripcion_modelo": "small",
+  "colores": {
+    "accent": "#FF5A36",
+    "highlight": "#FFD23F",
+    "ink": "#120C0A",
+    "text": "#FFFFFF",
+    "soft": "#E8DDD8",
+    "line": "#8F7F78",
+    "ok": "#4ADE80",
+    "alert": "#FF3B5C"
+  },
+  "_colores": "accent = CTA y detalles que mandan (se usa poco) · highlight = palabra que suena en el subtítulo · ink = fondo de paneles · text/soft = textos · line = líneas y handle · ok/alert = checks y errores",
+  "fuente": {
+    "principal": "Montserrat",
+    "titulos": {
+      "familia": "Montserrat",
+      "peso": 800
+    },
+    "subtitulos": {
+      "familia": "Montserrat",
+      "peso": 800
+    },
+    "keywords": "Anton",
+    "mono": "JetBrains Mono"
+  },
+  "_fuente": "cada rol es un nombre de Google Font o {familia, peso, archivo}. Con archivo (p. ej. \"MiFuente-Bold.otf\") se busca en ~/editor-reels/marca/fuentes/ (o en carpeta_marca)",
+  "subtitulos": {
+    "upper": true,
+    "size": 80,
+    "maxWords": 4,
+    "band": false,
+    "byBrand": false
+  },
+  "_subtitulos": "upper = MAYÚSCULAS · size en px (64 discreto, 80 normal, 92 grande) · maxWords por página · band = píldora oscura detrás · byBrand = la palabra toma el color de la marca que se nombra",
+  "hook": {
+    "estilo": "caja",
+    "fondo": "#FFFFFF",
+    "upper": false,
+    "radio": 28
+  },
+  "_hook": "estilo caja | suelto | ninguno · fondo de la caja · texto (por defecto el ink) · upper",
+  "punch_ins": "marcados",
+  "emojis": false,
+  "plano": {
+    "fuente_habitual": "camara",
+    "espacio_libre": "izquierda",
+    "medir_siempre": true
+  },
+  "_plano": "fuente_habitual camara | split | horizontal | pantalla · espacio_libre izquierda | derecha | arriba (dónde van los rótulos pequeños)",
+  "logo_propio": {
+    "id": "anahornea",
+    "archivo": "logo.png",
+    "nombre": "Ana Hornea",
+    "color": "#FF5A36"
+  },
+  "marcas_frecuentes": [
+    "instagram"
+  ],
+  "audio": {
+    "efectos": true,
+    "musica": false,
+    "micro": "cercano"
+  },
+  "_audio": "micro cercano (solapa, de mano) | sala (el del móvil). biblioteca opcional: por defecto ~/editor-reels/marca (sfx/ y musica/)",
+  "cta": {
+    "tipo": "pregunta",
+    "verbo": "comenta"
+  },
+  "_cta": "tipo pregunta | keyword | seguir | ninguno",
+  "formatos": [
+    "tutorial",
+    "antes-despues"
+  ],
+  "notas": {
+    "tono": "cálido, cercano, con humor suave; tuteo; frases cortas",
+    "evitar": [
+      "emojis",
+      "palabras en inglés si hay una en español",
+      "transiciones de destello"
+    ]
+  }
+}
