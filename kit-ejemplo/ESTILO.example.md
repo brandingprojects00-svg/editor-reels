@@ -1,6 +1,6 @@
 # Estilo de Ana (@ana.hornea)
 
-> Ejemplo de lo que escribe la entrevista. El tuyo vive en `~/editor-reels/marca/ESTILO.md`
+> Ejemplo de lo que escribe la entrevista. El tuyo vive en `marca/ESTILO.md` dentro de tu carpeta de trabajo
 > y el agente lo lee antes de cada edición. Escrito como notas de un editor que te conoce.
 
 ## Quién es

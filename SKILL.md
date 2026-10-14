@@ -12,21 +12,34 @@ según el estado y lo que pida el usuario.
 
 - **Esta carpeta (la skill)**: instrucciones (`guias/`), plantilla Remotion (`template/`),
   presets de color (`presets/`) y recetas de formato (`formatos/`). No se escribe aquí.
-- **La casa del usuario**: `~/editor-reels/` (o `$EDITOR_REELS_HOME`). Ahí van:
+- **La casa del usuario**: su carpeta de trabajo. **Es la carpeta que abrió en Claude Code /
+  Codex** (a la que te dio acceso), así todo queda donde él lo ve. Ahí van:
   - `marca/perfil.json` (datos técnicos) y `marca/ESTILO.md` (su guía de estilo en prosa),
     `marca/fuentes/`, `marca/logos/`, `marca/sfx/`, `marca/musica/`, `marca/referencias/`
-  - `proyectos/<nombre>/` — un proyecto Remotion por vídeo, con `input/` para sus clips
+  - `proyectos/<nombre>/` — un proyecto Remotion por vídeo; sus clips en `proyectos/<nombre>/input/`
+    y el vídeo terminado en `proyectos/<nombre>/final/`
   - `.venv/` y `models/` — el entorno de Python y Whisper
 
-`<skill>` en las guías es la ruta de esta carpeta. Todos los comandos se corren **dentro del
-proyecto** (`~/editor-reels/proyectos/<nombre>/`) con `python scripts/…`. En Windows usa
-`python`; en Mac/Linux, si `python` no existe, `python3`.
+`<skill>` en las guías es la ruta de esta carpeta. `<casa>` es la casa. Todos los comandos se
+corren **dentro del proyecto** (`<casa>/proyectos/<nombre>/`) con `python scripts/…`. En Windows
+usa `python`; en Mac/Linux, si `python` no existe, `python3`.
+
+**Lo primero en cada sesión**: comprueba la casa.
 
 ```bash
-ls ~/editor-reels/marca/perfil.json 2>/dev/null && echo "CON PERFIL" || echo "SIN PERFIL"
+python <skill>/template/scripts/casa.py
 ```
 
-## Modo 1 — Primera vez (sin perfil)
+- Si **no hay casa guardada** (sale `~/editor-reels` y no existe): la casa es **la carpeta en la
+  que te abrió el usuario** (tu directorio de trabajo). Fíjala con
+  `python <skill>/template/scripts/casa.py "<carpeta de trabajo>"`. Si te abrió en su carpeta
+  personal, en el Escritorio o en una carpeta de OneDrive/iCloud, pídele que cree una carpeta
+  solo para esto (p. ej. `C:\Reels` en Windows, `~/Reels` en Mac), que la abra en Claude Code y
+  vuelva a empezar ahí.
+- Si **la casa guardada no es la carpeta actual**, pregúntale cuál usar (puede tener dos
+  marcas en carpetas distintas) y fija la que diga.
+
+## Modo 1 — Primera vez (sin perfil en la casa)
 
 1. **Instalación**: lee `guias/instalacion.md`. Corre el doctor, explica lo que falte y
    **pide permiso antes de instalar cualquier cosa**.
@@ -40,7 +53,7 @@ completa después. Nunca edites su primer vídeo sin al menos colores, tipograf�
 
 ## Modo 2 — Editar (con perfil + clips)
 
-Lee **siempre** antes de empezar: `marca/ESTILO.md` y `marca/perfil.json` del usuario.
+Lee **siempre** antes de empezar: `<casa>/marca/ESTILO.md` y `<casa>/marca/perfil.json`.
 Son tan obligatorios como las reglas de la skill: `notas.evitar` son prohibiciones.
 
 Después sigue `guias/editar.md`. Resumen:

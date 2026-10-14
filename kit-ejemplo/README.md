@@ -1,10 +1,10 @@
 # Kit de marca (ejemplo)
 
 Esta carpeta enseña qué guarda la skill sobre ti. **La tuya se crea sola** en
-`~/editor-reels/marca/` durante la entrevista; no copies esta.
+`<casa>/marca/` (la casa es la carpeta de trabajo que abriste en Claude Code) durante la entrevista; no copies esta.
 
 ```
-~/editor-reels/marca/
+<tu carpeta de trabajo>/marca/
 ├── perfil.json      valores técnicos: colores, fuentes, subtítulos, hook, audio, cierre
 │                    (ejemplo comentado: perfil.example.json)
 ├── ESTILO.md        tu guía de estilo en prosa: quién eres, tono, formatos, qué evitar,

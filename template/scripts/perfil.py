@@ -1,7 +1,8 @@
 """Lee el perfil del creador (lo escribe la entrevista de la skill).
 
 Orden: $REEL_PERFIL → ./perfil.json del proyecto → <casa>/marca/perfil.json.
-La casa es $EDITOR_REELS_HOME o, si no está, ~/editor-reels.
+La casa (la carpeta de trabajo del usuario) es, por orden: $EDITOR_REELS_HOME → la ruta guardada
+en ~/.editor-reels-home (la escribe scripts/casa.py la primera vez) → ~/editor-reels.
 Sin perfil todo funciona con valores neutros.
 """
 import json, os, pathlib, sys
@@ -13,7 +14,18 @@ for _s in (sys.stdout, sys.stderr):
     except Exception:
         pass
 
-CASA = pathlib.Path(os.path.expanduser(os.environ.get("EDITOR_REELS_HOME", "~/editor-reels")))
+PUNTERO = pathlib.Path.home() / ".editor-reels-home"
+
+
+def _casa():
+    if os.environ.get("EDITOR_REELS_HOME"):
+        return pathlib.Path(os.path.expanduser(os.environ["EDITOR_REELS_HOME"]))
+    if PUNTERO.exists() and PUNTERO.read_text(encoding="utf-8").strip():
+        return pathlib.Path(PUNTERO.read_text(encoding="utf-8").strip())
+    return pathlib.Path.home() / "editor-reels"
+
+
+CASA = _casa()
 MARCA = CASA / "marca"
 
 

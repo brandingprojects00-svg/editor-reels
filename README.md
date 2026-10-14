@@ -16,8 +16,8 @@ Todo corre en tu ordenador: la transcripción es local (Whisper), no se sube nad
 
 ## Cómo funciona
 
-1. **La primera vez** te hace una entrevista de ~10 minutos y guarda tu estilo en
-   `~/editor-reels/marca/` (un `perfil.json` y un `ESTILO.md` que puedes leer y editar).
+1. **La primera vez** te hace una entrevista de ~10 minutos y guarda tu estilo en tu carpeta
+   de trabajo, en `marca/` (un `perfil.json` y un `ESTILO.md` que puedes leer y editar).
    Termina con un vídeo de demo con tu estilo.
 2. **Cada vídeo**: dejas tus clips en una carpeta y le dices, por ejemplo, *«es un tutorial
    de 3 trucos de Canva, cierra pidiendo que comenten GUÍA»*. Te propone el montaje y un
@@ -29,6 +29,11 @@ Todo corre en tu ordenador: la transcripción es local (Whisper), no se sube nad
 
 ### Requisitos
 
+- **Una cuenta de pago de Claude** (Pro o superior) para usar **Claude Code**: en la app de
+  escritorio de Claude (pestaña *Code*) o en la terminal. (O Codex de OpenAI.)
+- **Una carpeta solo para tus reels**, fuera de OneDrive/iCloud y con ruta corta (p. ej.
+  `C:\Reels` en Windows, `~/Reels` en Mac). Ábrela en Claude Code: ahí se guarda todo —
+  tu marca, tus proyectos y tus vídeos terminados.
 - [Node.js](https://nodejs.org) 18 o más nuevo
 - [Python](https://python.org) 3.10 o más nuevo
 - ~3 GB libres (dependencias + modelo de transcripción)
@@ -43,7 +48,7 @@ sistema y te pide permiso antes de instalar nada.
 git clone https://github.com/brandingprojects00-svg/editor-reels ~/.claude/skills/editor-reels
 ```
 
-Abre Claude Code en cualquier carpeta y escribe `/editor-reels` (o «quiero editar mis reels»).
+Abre Claude Code **en tu carpeta de reels** y escribe `/editor-reels` (o «quiero editar mis reels»).
 
 ### Codex
 

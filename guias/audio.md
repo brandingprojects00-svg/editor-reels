@@ -10,7 +10,7 @@ Si el perfil dice `audio.efectos: false`, `sfx: []` y listo.
    ffmpeg del sistema.
 3. Nada: mejor sin sonido que un sonido con copyright.
 
-En cada proyecto: `mkdir -p public/sfx && cp ~/editor-reels/marca/sfx/*.wav public/sfx/`.
+En cada proyecto: `mkdir -p public/sfx && cp <casa>/marca/sfx/*.wav public/sfx/`.
 En `cortes.json`: `"sfx": [{ "s": "whoosh_in", "at": 3.1, "gain": -12 }]` (`s` = nombre del WAV en `public/sfx/`,
 `at` en segundos, `gain` en dB).
 
@@ -19,13 +19,13 @@ En PowerShell, en vez de `set -a; . archivo`: `$env:FREESOUND_API_KEY="xxxx"`.
 ## Efectos de sonido — kit CC0 compartido
 
 **El kit vive en la biblioteca del perfil** (`audio.biblioteca`, por defecto
-`~/editor-reels/marca/sfx`), no en el proyecto: que el whoosh sea siempre el mismo es lo que hace que
+`<casa>/marca/sfx`), no en el proyecto: que el whoosh sea siempre el mismo es lo que hace que
 suene tuyo. Fuente: **Freesound APIv2** con `license:"Creative Commons 0"` — sin atribución
 ni reclamaciones. API key gratis en freesound.org → guárdala fuera de todo repo:
 
 ```bash
-mkdir -p ~/editor-reels/marca && echo 'FREESOUND_API_KEY=xxxx' > ~/editor-reels/marca/freesound.env
-set -a; . ~/editor-reels/marca/freesound.env; set +a
+mkdir -p <casa>/marca && echo 'FREESOUND_API_KEY=xxxx' > <casa>/marca/freesound.env
+set -a; . <casa>/marca/freesound.env; set +a
 python scripts/sfx_search.py     # candidatos CC0 por hueco del kit (la elección es humana)
 python scripts/sfx_fetch.py      # descarga y procesa (kit de partida, o <KIT>/picks.json si existe)
 python scripts/sfx_deriva.py     # coin_1..5, cash, swell, air, reveal, tick_soft derivados del kit

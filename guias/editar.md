@@ -1,6 +1,6 @@
 # Editar: de clips sueltos + descripción a reel terminado
 
-**Antes de tocar nada**, lee `~/editor-reels/marca/ESTILO.md` y `perfil.json`. Todo lo que
+**Antes de tocar nada**, lee `<casa>/marca/ESTILO.md` y `perfil.json`. Todo lo que
 decidas (hook, ritmo, tarjetas, sonido, cierre) sale de ahí, de lo que pida el usuario y de
 `guias/reglas.md`.
 
@@ -11,15 +11,15 @@ la palabra clave), pregúntalo en una sola tanda. Lo demás, decídelo tú con s
 ## 1. Proyecto
 
 ```bash
-cp -R <skill>/template ~/editor-reels/proyectos/<nombre-corto>
-cd ~/editor-reels/proyectos/<nombre-corto>
+cp -R <skill>/template <casa>/proyectos/<nombre-corto>
+cd <casa>/proyectos/<nombre-corto>
 npm install --ignore-scripts          # una vez por proyecto (~1 min)
 python scripts/aplica_perfil.py       # su marca en theme.ts y fonts.ts
 mkdir -p input && cp <sus clips> input/
 ```
 
 Nombres de clip sin espacios ni acentos y **que no se llamen `c1`** (`toma1.mp4`,
-`intro.mov`…). Si usa efectos: `mkdir -p public/sfx && cp ~/editor-reels/marca/sfx/*.wav public/sfx/`
+`intro.mov`…). Si usa efectos: `mkdir -p public/sfx && cp <casa>/marca/sfx/*.wav public/sfx/`
 (Remotion solo sirve lo que está en `public/`).
 
 ## 2. Sondeo

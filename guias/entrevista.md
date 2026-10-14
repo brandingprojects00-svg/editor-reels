@@ -1,7 +1,7 @@
 # La entrevista: conocer a la persona y personalizar la skill
 
 Se hace **una vez** (y por partes cuando quiera cambiar algo). Produce dos archivos en
-`~/editor-reels/marca/`:
+`<casa>/marca/`:
 
 - **`perfil.json`** — valores técnicos que la plantilla aplica sola (`aplica_perfil.py`).
   Esquema completo comentado: `<skill>/kit-ejemplo/perfil.example.json`.
@@ -76,12 +76,12 @@ no se lee sobre vídeo**: díselo y propón una versión más clara para el resa
 1. «¿Hay vídeos (tuyos o de otros) cuyo estilo de edición te encante?» Pide 1-3.
    - **Archivos**: que los deje en `marca/referencias/`.
    - **Links**: para analizarlos hay que descargarlos. Pide permiso para instalar `yt-dlp`
-     en el entorno (`~/editor-reels/.venv/…/python -m pip install yt-dlp`) y bajarlos con
-     `python -m yt_dlp -o "~/editor-reels/marca/referencias/%(id)s.%(ext)s" URL`. Solo para
+     en el entorno (`<casa>/.venv/…/python -m pip install yt-dlp`) y bajarlos con
+     `python -m yt_dlp -o "<casa>/marca/referencias/%(id)s.%(ext)s" URL`. Solo para
      analizar en local: nunca se reutiliza ese material en sus vídeos.
 2. Analiza (dentro de un proyecto, p. ej. el de demo):
    ```bash
-   python scripts/analiza_referencia.py ~/editor-reels/marca/referencias/*.mp4
+   python scripts/analiza_referencia.py <casa>/marca/referencias/*.mp4
    ```
 3. **Mira los fotogramas** que deja en `marca/referencias/analisis/<vídeo>/` y describe lo
    que ves: subtítulos (posición, mayúsculas, tamaño, caja o suelto, una palabra o frase,
@@ -164,7 +164,7 @@ no se lee sobre vídeo**: díselo y propón una versión más clara para el resa
    singular, como notas de un editor que la conoce: concreto, con ejemplos, sin relleno).
 2. Enséñale un **resumen en tabla**: colores (con hex), fuentes, subtítulos, hook, ritmo,
    formatos, sonido, cierre, cosas a evitar.
-3. **Render de demo con su estilo** (dentro de `~/editor-reels/proyectos/demo`):
+3. **Render de demo con su estilo** (dentro de `<casa>/proyectos/demo`):
    ```bash
    python scripts/aplica_perfil.py
    python scripts/demo_words.py --video          # o --fondo ~/ruta/a/un/clip_suyo.mp4

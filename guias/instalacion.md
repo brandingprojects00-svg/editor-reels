@@ -6,17 +6,20 @@ qué sirve. Si dice que no, explica qué deja de funcionar y sigue con lo que se
 
 ## 1. Preparar la casa y un proyecto de prueba
 
+La casa es **la carpeta que el usuario abrió en Claude Code** (ver SKILL.md). Fíjala y copia ahí
+un proyecto de prueba:
+
 ```bash
-mkdir -p ~/editor-reels/marca/{fuentes,logos,sfx,musica,referencias} ~/editor-reels/proyectos
-cp -R <skill>/template ~/editor-reels/proyectos/demo
-cd ~/editor-reels/proyectos/demo
+python <skill>/template/scripts/casa.py "<carpeta de trabajo>"
+cp -R <skill>/template "<casa>/proyectos/demo"
+cd "<casa>/proyectos/demo"
 python scripts/doctor.py
 ```
 
 > **Windows**: la ruta del proyecto tiene que ser corta (el navegador de Remotion falla con
-> rutas de más de 260 caracteres). `~/editor-reels` suele valer. Si su usuario de Windows es
-> muy largo o está en OneDrive, usa `EDITOR_REELS_HOME=C:/reels` (y díselo para que lo
-> recuerde). Evita carpetas sincronizadas con OneDrive/iCloud: `node_modules` las colapsa.
+> rutas de más de 260 caracteres) y fuera de OneDrive (que suele incluir Escritorio y
+> Documentos): `C:\Reels` es ideal. Si la carpeta abierta no cumple, pídele que cree una y la
+> abra en Claude Code. `casa.py` avisa si ve OneDrive o una ruta larga.
 
 El doctor no instala nada: dice OK/FALTA y da el comando de cada sistema.
 
@@ -27,7 +30,7 @@ El doctor no instala nada: dice OK/FALTA y da el comando de cada sistema.
 | **Node.js 18+** | Remotion (el motor que dibuja y renderiza el vídeo) | Windows `winget install OpenJS.NodeJS.LTS` · Mac `brew install node` · Linux nodejs.org |
 | **Python 3.10+** | los scripts de la skill | Windows `winget install Python.Python.3.12` · Mac `brew install python@3.12` |
 | **Dependencias del proyecto** | Remotion y sus fuentes | `npm install --ignore-scripts` dentro del proyecto (~250 paquetes, ~400 MB). Luego `npm audit` |
-| **Entorno de Python** | Whisper (transcripción local, sin nube) + OpenCV (detectar la cara para no taparla) | `python scripts/setup_entorno.py` — crea `~/editor-reels/.venv`, instala `faster-whisper`, `numpy`, `opencv-python-headless` de PyPI y baja el modelo `small` (~0,5 GB) de Hugging Face |
+| **Entorno de Python** | Whisper (transcripción local, sin nube) + OpenCV (detectar la cara para no taparla) | `python scripts/setup_entorno.py` — crea `<casa>/.venv`, instala `faster-whisper`, `numpy`, `opencv-python-headless` de PyPI y baja el modelo `small` (~0,5 GB) de Hugging Face |
 
 `npm install` siempre con `--ignore-scripts` (no ejecuta scripts de terceros al instalar).
 

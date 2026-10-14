@@ -1,5 +1,5 @@
 {
-  "_como": "Ejemplo comentado. El tuyo vive en ~/editor-reels/marca/perfil.json y lo escribe la entrevista. Las claves que empiezan por _ son notas.",
+  "_como": "Ejemplo comentado. El tuyo vive en marca/perfil.json de tu carpeta de trabajo y lo escribe la entrevista. Las claves que empiezan por _ son notas.",
   "nombre": "Ana",
   "handle": "@ana.hornea",
   "idioma": "es",
@@ -34,7 +34,7 @@
     "keywords": "Anton",
     "mono": "JetBrains Mono"
   },
-  "_fuente": "cada rol es un nombre de Google Font o {familia, peso, archivo}. Con archivo (p. ej. \"MiFuente-Bold.otf\") se busca en ~/editor-reels/marca/fuentes/ (o en carpeta_marca)",
+  "_fuente": "cada rol es un nombre de Google Font o {familia, peso, archivo}. Con archivo (p. ej. \"MiFuente-Bold.otf\") se busca en marca/fuentes/ de tu carpeta de trabajo (o en carpeta_marca)",
   "subtitulos": {
     "upper": true,
     "size": 80,
@@ -72,7 +72,7 @@
     "musica": false,
     "micro": "cercano"
   },
-  "_audio": "micro cercano (solapa, de mano) | sala (el del móvil). biblioteca opcional: por defecto ~/editor-reels/marca (sfx/ y musica/)",
+  "_audio": "micro cercano (solapa, de mano) | sala (el del móvil). biblioteca opcional: por defecto marca/ de tu carpeta de trabajo (sfx/ y musica/)",
   "cta": {
     "tipo": "pregunta",
     "verbo": "comenta"
